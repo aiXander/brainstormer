@@ -1,0 +1,13 @@
+# macOS
+.DS_Store 
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# local content folders
+logs/
+transcripts/
+ideas_log.txt
