@@ -9,6 +9,6 @@ __pycache__/
 
 # local content folders
 logs/
-transcripts/
+transcripts
 ideas_log.txt
 ideas_log.jsonl

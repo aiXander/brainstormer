@@ -1,2 +1,0 @@
-Transcript log started at 20250418_192039.
-All right, let's take a look. This looks great. This looks really good. Yeah, this looks really good. This is starting to look promising, like a meeting summarizer that is listening to you. And then whenever you have something useful, the LLM can sort of like try to adjust based on the context. They can try to help, you know, try to add some new ideas to the ongoing 
