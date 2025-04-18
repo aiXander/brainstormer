@@ -287,8 +287,7 @@ async def main_async():
                      ideas_log_path = os.path.join(os.getcwd(), ideas_log_path_str)
                      try:
                          async with aiofiles.open(ideas_log_path, 'a', encoding='utf-8') as ideas_file:
-                             await ideas_file.write(f"--- Final Ideas Generated at {timestamp_str} ---
-")
+                             await ideas_file.write(f"--- Final Ideas Generated at {timestamp_str} ---")
                              for idea in final_ideas:
                                  logging.info(f"- {idea}")
                                  await ideas_file.write(f"- {idea}\n")
