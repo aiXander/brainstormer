@@ -1,0 +1,8 @@
+numpy>=1.22.0
+sounddevice>=0.4.5
+scipy>=1.8.0
+pyyaml>=6.0
+requests>=2.27.1
+openai>=1.2.0
+# Optional dependencies
+soundfile>=0.10.3  # Alternative to scipy.io.wavfile 

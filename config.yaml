@@ -1,0 +1,38 @@
+transcription:
+  model: gpt-4o-mini-transcribe
+
+main:
+  idea_interval: 30 # seconds
+  summarize_interval: 120 # seconds
+
+logging:
+  transcript_log_dir: "transcripts"
+
+llm:
+  model: google/gemini-2.5-flash-preview
+  api_url: https://openrouter.ai/api/v1/chat/completions
+  max_tokens: 1000
+  temperature: 0.8
+  ideas_log_path: ideas_log.txt
+  
+  system_prompt: |
+    You are a concise and insightful assistant analyzing conversation transcripts. 
+    Your goal is to identify truly novel ideas, missed connections, critical questions, 
+    alternative perspectives, or overlooked challenges. Focus on adding unique value. 
+    If the conversation segment doesn't spark any genuinely useful or non-obvious insight, 
+    respond with only the exact text: NO_IDEAS
+  user_prompt_template: |
+    Analyze the following conversation transcript. Focus primarily on the **most recent exchanges** to generate 1-2 highly relevant and insightful contributions (ideas, connections, questions, perspectives, challenges) that participants might not have considered. 
+    
+    **Only provide a response if you have a genuinely useful and non-obvious insight.** Otherwise, respond with only the exact text: NO_IDEAS
+
+    Ensure your output is a simple list, one item per line, without numbers, bullets, or explanations.
+
+    TRANSCRIPT:
+    {transcript}
+
+  # -- Summarization Settings --
+  summarization_system_prompt: "You are a helpful assistant that summarizes conversations accurately while preserving the key points and context."
+  summarization_user_prompt_template: "Summarize the following conversation transcript concisely while preserving all key information, topics, and relevant context:\n\n{transcript}"
+  summarization_max_tokens: 5000
+  summarization_temperature: 0.7
