@@ -49,7 +49,7 @@ Tailor Brainstormer's behavior:
 ```yaml
 transcription:
   # Model for OpenAI transcription (e.g., whisper-1)
-  model: "YOUR_TRANSCRIPTION_MODEL" # Replace with a valid OpenAI transcription model
+  model: "whisper-1" # Replace with a valid OpenAI transcription model
 
 main:
   # Interval (seconds) for idea generation
@@ -63,7 +63,7 @@ logging:
 
 llm:
   # LLM model via OpenRouter for ideas (e.g., anthropic/claude-3-haiku, google/gemini-flash)
-  model: "YOUR_LLM_MODEL" # Replace with a valid OpenRouter model identifier
+  model: "anthropic/claude-3-haiku" # Replace with a valid OpenRouter model identifier
   api_url: https://openrouter.ai/api/v1/chat/completions
   max_tokens: 1000 # Max tokens for LLM idea response
   temperature: 0.8 # Sampling temperature

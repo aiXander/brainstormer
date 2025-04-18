@@ -11,3 +11,4 @@ __pycache__/
 logs/
 transcripts/
 ideas_log.txt
+ideas_log.jsonl
