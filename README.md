@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Brainstormer is an AI agent that actively listens to your conversations (mic + system audio) and provides real-time insights. It transcribes the dialogue and uses Large Language Models (LLMs) via OpenAI and OpenRouter to suggest ideas, questions, or alternative perspectives, logging them for later review.
+Brainstormer is an AI agent that actively listens to your conversations (mic + system audio) and provides real-time insights. It transcribes the dialogue and uses Large Language Models (LLMs) via OpenAI and OpenRouter to suggest ideas, questions, or alternative perspectives, logging them for instead useability in the conversation.
 
 ## ✨ Features
 
